@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Global | Data-Driven Marketing for SMBs</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%231E3A8A' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .btn-primary {
+            background-color: #10B981;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-secondary {
+            background-color: #1E3A8A;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #1e40af;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-600">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-blue-900">Lead Global</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#how-it-works" class="text-gray-500 hover:text-blue-900 font-medium transition-colors">How It Works</a>
+                <a href="#case-studies" class="text-gray-500 hover:text-blue-900 font-medium transition-colors">Results</a>
+                <a href="#blueprint" class="text-gray-500 hover:text-blue-900 font-medium transition-colors">Blueprint</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block bg-blue-900 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-800 transition-colors">Contact Us</a>
+            <button class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-16 md:py-24 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 leading-tight mb-4">Stop Guessing.<br>Start Growing.</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">We build data-driven marketing engines for SMBs, turning stagnant results into sustainable, predictable growth. Finally, marketing you can measure.</p>
+                    <a href="#contact" class="btn-primary text-white font-medium px-8 py-4 rounded-md inline-block text-lg shadow-lg">Request Your Free Growth Blueprint</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <svg class="w-full max-w-md" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#1E3A8A;stop-opacity:0.2" />
+                                <stop offset="100%" style="stop-color:#10B981;stop-opacity:0.2" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="50" y="50" width="400" height="300" rx="20" fill="url(#grad1)" />
+                        <path d="M100,250 L150,200 L200,220 L250,150 L300,180 L350,120 L400,100" stroke="#10B981" stroke-width="3" fill="none" />
+                        <path d="M100,300 L150,280 L200,290 L250,260 L300,270 L350,240 L400,230" stroke="#1E3A8A" stroke-width="3" fill="none" />
+                        <circle cx="150" cy="200" r="5" fill="#10B981" />
+                        <circle cx="200" cy="220" r="5" fill="#10B981" />
+                        <circle cx="250" cy="150" r="5" fill="#10B981" />
+                        <circle cx="300" cy="180" r="5" fill="#10B981" />
+                        <circle cx="350" cy="120" r="5" fill="#10B981" />
+                        <circle cx="400" cy="100" r="5" fill="#10B981" />
+                        <circle cx="150" cy="280" r="5" fill="#1E3A8A" />
+                        <circle cx="200" cy="290" r="5" fill="#1E3A8A" />
+                        <circle cx="250" cy="260" r="5" fill="#1E3A8A" />
+                        <circle cx="300" cy="270" r="5" fill="#1E3A8A" />
+                        <circle cx="350" cy="240" r="5" fill="#1E3A8A" />
+                        <circle cx="400" cy="230" r="5" fill="#1E3A8A" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="bg-gray-50 py-8 border-t border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-gray-500 font-medium mb-8">Trusted by growing businesses across the nation</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <!-- Company logos (SVG placeholders) -->
+                <svg class="h-8 w-auto opacity-60" viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="30" fill="none"/>
+                    <text x="10" y="20" font-family="Arial" font-size="16" fill="#4B5563">ACME Inc</text>
+                </svg>
+                <svg class="h-8 w-auto opacity-60" viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="30" fill="none"/>
+                    <text x="10" y="20" font-family="Arial" font-size="16" fill="#4B5563">TechFlow</text>
+                </svg>
+                <svg class="h-8 w-auto opacity-60" viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="30" fill="none"/>
+                    <text x="10" y="20" font-family="Arial" font-size="16" fill="#4B5563">GrowthX</text>
+                </svg>
+                <svg class="h-8 w-auto opacity-60" viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="30" fill="none"/>
+                    <text x="10" y="20" font-family="Arial" font-size="16" fill="#4B5563">Elevate</text>
+                </svg>
+                <svg class="h-8 w-auto opacity-60" viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="30" fill="none"/>
+                    <text x="10" y="20" font-family="Arial" font-size="16" fill="#4B5563">Pinnacle</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-16 md:py-24 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-16">Does This Sound Familiar?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Problem 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="bg-red-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 text-center mb-4">Wasted Marketing Spend</h3>
+                    <p class="text-gray-600 text-center">Investing in campaigns with no clear ROI or traceable results.</p>
+                </div>
+                <!-- Problem 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="bg-yellow-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 text-center mb-4">Overwhelming Complexity</h3>
+                    <p class="text-gray-600 text-center">Struggling to keep up with the ever-changing world of SEO, PPC, and social media.</p>
+                </div>
+                <!-- Problem 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="bg-blue-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 text-center mb-4">Stagnant Business Growth</h3>
+                    <p class="text-gray-600 text-center">Facing flat traffic, a dry pipeline, and a shortage of high-quality leads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="how-it-works" class="py-16 md:py-24 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-16">Your Path to Predictable, Data-Driven Growth</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="relative">
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow h-full">
+                        <div class="absolute -top-4 -left-4 bg-blue-900 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold">1</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 mt-4">Blueprint</h3>
+                        <p class="text-gray-600">We analyze your data, competitors, and market to build a custom, actionable growth strategy.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative">
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow h-full">
+                        <div class="absolute -top-4 -left-4 bg-blue-900 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold">2</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 mt-4">Build</h3>
+                        <p class="text-gray-600">We execute with precision, launching targeted campaigns designed to attract high-intent customers.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow h-full">
+                        <div class="absolute -top-4 -left-4 bg-blue-900 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold">3</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 mt-4">Grow</h3>
+                        <p class="text-gray-600">We track every metric, optimizing relentlessly to drive down costs and scale your results.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#case-studies" class="btn-secondary text-white font-medium px-6 py-3 rounded-md inline-block text-lg shadow-md">See How We Grow Businesses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="blueprint" class="py-16 md:py-24 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-16">Get Your FREE, No-Obligation Growth Blueprint</h2>
+            <div class="md:flex items-center gap-12">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 relative">
+                        <div class="absolute -top-4 -right-4 bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold">FREE</div>
+                        <div class="border-b-2 border-blue-900 pb-4 mb-4">
+                            <h3 class="text-2xl font-bold text-blue-900">Growth Blueprint</h3>
+                            <p class="text-gray-600">Your roadmap to predictable growth</p>
+                        </div>
+                        <div class="space-y-4 p-4">
+                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                            <div class="h-4 bg-gray-200 rounded"></div>
+                            <div class="h-4 bg-gray-200 rounded w-5/6"></div>
+                            <div class="h-4 bg-gray-200 rounded w-2/3"></div>
+                        </div>
+                        <div class="mt-6 p-4 bg-gray-50 rounded">
+                            <div class="flex items-center gap-4">
+                                <div>
+                                    <div class="h-16 w-16 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Performance Metrics</h4>
+                                    <p class="text-sm text-gray-600">Clear targets and KPIs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div class="bg-green-100 p-1 rounded-full mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 text-lg">A complete analysis of your current digital footprint</h4>
+                                <p class="text-gray-600">Understand where you stand and what's working (or not working) right now.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-green-100 p-1 rounded-full mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 text-lg">Actionable insights into your top 3 competitors</h4>
+                                <p class="text-gray-600">Learn what's working for them and how you can gain a competitive edge.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-green-100 p-1 rounded-full mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 text-lg">A 90-day roadmap with clear performance targets</h4>
+                                <p class="text-gray-600">Get a step-by-step plan with measurable milestones to track your progress.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-green-100 p-1 rounded-full mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 text-lg">Identification of your most profitable marketing channels</h4>
+                                <p class="text-gray-600">Discover where to focus your resources for maximum return on investment.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mt-10">
+                        <a href="#contact" class="btn-primary text-white font-medium px-8 py-4 rounded-md inline-block text-lg shadow-lg">Claim My Free Blueprint Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="py-16 md:py-24 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-16">From Plateau to Peak Performance</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Case Study 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="mb-4">
+                        <span class="text-sm font-medium text-gray-500">Local SaaS Company</span>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-green-500">+215%</span>
+                    </div>
+                    <p class="text-gray-700 font-medium">Increase in Qualified Organic Leads in 6 Months</p>
+                </div>
+                <!-- Case Study 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="mb-4">
+                        <span class="text-sm font-medium text-gray-500">E-commerce Retailer</span>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-green-500">43%</span>
+                    </div>
+                    <p class="text-gray-700 font-medium">Reduction in Customer Acquisition Cost</p>
+                </div>
+                <!-- Case Study 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="mb-4">
+                        <span class="text-sm font-medium text-gray-500">Professional Services Firm</span>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-green-500">12X</span>
+                    </div>
+                    <p class="text-gray-700 font-medium">Return on Ad Spend After Campaign Optimization</p>
+                </div>
+                <!-- Case Study 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="mb-4">
+                        <span class="text-sm font-medium text-gray-500">B2B Manufacturing</span>
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-green-500">+168%</span>
+                    </div>
+                    <p class="text-gray-700 font-medium">Increase in Marketing Qualified Leads Year-Over-Year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact" class="py-16 md:py-24 px-4 bg-blue-900 text-white">
+        <div class="container mx-auto max-w-6xl">
+            <div class="md:flex items-center justify-between gap-12">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Build a Marketing Engine That Works?</h2>
+                    <p class="text-xl text-blue-100 mb-8">Stop leaving growth to chance. Let's build a predictable future for your business, together. Get started with your free blueprint today.</p>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-white rounded-full p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <p class="text-blue-100">100% Free, No Obligation</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-6">Get Your Free Growth Blueprint</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="John Smith" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Work Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="john@yourcompany.com" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="website" class="block text-gray-700 font-medium mb-2">Company Website</label>
+                                <input type="url" id="website" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="https://yourcompany.com" required>
+                            </div>
+                            <button type="submit" class="btn-primary w-full text-white font-medium px-6 py-4 rounded-md text-lg shadow-md">Send My Blueprint</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="md:flex justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold text-white">Lead Global</span>
+                    <p class="mt-2 text-gray-400">Data-driven marketing for SMBs</p>
+                </div>
+                <div class="flex flex-wrap gap-8">
+                    <div>
+                        <h4 class="text-white font-medium mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#how-it-works" class="text-gray-400 hover:text-white transition-colors">How It Works</a></li>
+                            <li><a href="#case-studies" class="text-gray-400 hover:text-white transition-colors">Results</a></li>
+                            <li><a href="#blueprint" class="text-gray-400 hover:text-white transition-colors">Blueprint</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-medium mb-4">Contact</h4>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400">hello@leadglobal.com</li>
+                            <li class="text-gray-400">(555) 123-4567</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center md:text-left md:flex justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 Lead Global. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex justify-center md:justify-start space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">Twitter</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
